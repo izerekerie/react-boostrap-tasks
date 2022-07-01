@@ -6,7 +6,7 @@ function Categories() {
   const user=JSON.parse(localStorage.getItem("user"))
   const [categories,setCategories]=useState([]);
    const [edit,setEdit]=useState(false)
-   const [current,setCurrent]=useState('')
+   const [current,setCurrent]=useState(null)
   const [catData,setCatData]=useState({
     createdBy:user.existingUser.name,
     name:''

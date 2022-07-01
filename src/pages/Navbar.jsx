@@ -1,6 +1,8 @@
 import React from 'react'
-
-function Home1() {
+const handleLogout= ()=>{
+  window.localStorage.clear()
+}
+function Navbar() {
   return (
     <div className='navbar navbar-expand-lg  text-light navbar-dark bg-primary' >
         
@@ -35,8 +37,8 @@ function Home1() {
             </ul>
             </li>
          
-            <li className="nav-item">
-            <a href="#" className="nav-link link-primary text-primary bg-white p-2 rounded">Logout</a>
+            <li onClick={handleLogout} className="nav-item">
+            <a href="#"  className="nav-link link-primary text-primary bg-white p-2 rounded">Logout</a>
             </li>
             </ul>
            </div>
@@ -49,4 +51,4 @@ function Home1() {
   )
 }
 
-export default Home1
+export default Navbar

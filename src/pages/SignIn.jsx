@@ -22,7 +22,7 @@ try{
         console.log(reponse)
         localStorage.setItem('user',JSON.stringify(reponse.data));
     })
-    navigate('/')
+    navigate('/categories')
 }catch(err){
     console.log(err.response.data)
 }
